@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Lowie Meganck</title>
+<link rel="icon" type="image/png" href="https://static.thenounproject.com/png/4066328-200.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,13 +26,13 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('img/omslag.png');
+  background-image: url('img/Lowie\ Meganck.jpg');
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Projects) */
 .bgimg-2 {
-  background-image: url("img/Lowie\ Meganck.jpg");
+  background-image: url("img/Team-project.jpg");
   min-height: 400px;
 }
 
@@ -47,7 +48,7 @@ body, html {
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
+    background-attachment: fixed;
     min-height: 400px;
   }
 }
@@ -63,17 +64,18 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
+
+    <i class="fa fa-envelope w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" onclick="window.location.href='mailto: lowie@meganck.me'"></i>
+    <i class="fa fa-linkedin w3-bar-item w3-button w3-hide-small w3-right w3-hover-red " onclick="window.location.href='https://www.linkedin.com/in/lowie-meganck-8a98b9254/'"></i>
+    <i class="fa fa-github w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" onclick="window.location.href='https://github.com/lowie314'"></i>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -89,14 +91,9 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I want a bonus point</em></p>
-  <p>I am a computer science Engineering student at Ghent University and I follow the course Big Data Science. For this course it is possible to gain a bonus point by publishing linked opend data that links me to people I know. Therefore I have created this website with an embedded script that links me to certain people.</p>
+  <!-- <p class="w3-center"><em>I want a bonus point</em></p> -->
+  <p class="w3-center">Hello, I'm Lowie Meganck, a computer science engineer who studied at UGent (Ghent University). As a passionate tinkerer, I find joy in exploring the realms of both hardware and software. Whether it's delving into the intricate components of a circuit or diving into lines of code, I thrive on the challenge of bringing ideas to life. Being a proud member of UGent Racing, I embrace the collaborative nature of the team, where we design and construct a self-driving electrical racecars. It's a thrilling journey that pushes my limits and ignites my creativity. With a commitment to excellence and a multidisciplinary skill set, I am ready to make my mark in the world of computer science engineering and innovation.</p>
   <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Lowie Meganck</b></p><br>
-      <img src="img/Lowie Meganck.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
     </div>
@@ -135,35 +132,28 @@ body, html {
   </div>
 </div> -->
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<!-- Second Parallax Image with Projects Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="projects">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-text-black w3-wide">PROJECTS</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">People I know</h3>
-  <p class="w3-center"><em>Here are some people i Know.<br> Click on the images to make them bigger</em></p><br>
+<!-- Container (Projects Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <!-- <h3 class="w3-center">People I know</h3>
+  <p class="w3-center"><em>Here are some people i Know.<br> Click on the images to make them bigger</em></p><br> -->
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="https://pietercolpaert.be/img/pc.jpg" style="width:100%" onclick="window.location.href='https://pietercolpaert.be/';" class="w3-hover-opacity" alt="Pieter Colpaert">
+      <img src="https://static.wixstatic.com/media/c597f5_018bc82570e14f839f26cbebc6c42f1d~mv2.png/v1/fill/w_67,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/UGent_Racing_Logo_white_letters.png" style="width:100%" onclick="window.location.href='https://ugentracing.be'" class="w3-hover-opacity" alt="Pieter Colpaert">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://sven-lieber.org/en/authors/admin/avatar_hu341fc2871d7e2ba6b3452ea4fe0757eb_598788_270x270_fill_q75_lanczos_center.jpg" style="width:100%" onclick="window.location.href='https://sven-lieber.org/';" class="w3-hover-opacity" alt="Sven Lieber">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMOegYICdwT2APcZRVYytVo6-Y_sVafJHPLvB-0N-pqXJ27_eaK_N0v6u4i3hYt3_jZ9s&usqp=CAU" style="width:100%" onclick="window.location.href='https://lowie.meganck.me';" class="w3-hover-opacity" alt="Sven Lieber">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/michiel.jpeg" style="width:100%" onclick="window.location.href='https://micdwild.github.io/';" class="w3-hover-opacity" alt="Michiel De Wilde">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://media.licdn.com/dms/image/D4E03AQGtxmNofA726A/profile-displayphoto-shrink_800_800/0/1670531953022?e=2147483647&v=beta&t=9i_lrob_lOBWuKDWk5-D9h83PEJJZ8TmjYaKtZWpgKc" style="width:100%" onclick="window.location.href='https://tocornel.github.io/bds-me/';" class="w3-hover-opacity" alt="Michiel De Wilde">
-    </div>
   </div>
 </div>
 
@@ -176,7 +166,7 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Third Parallax Image with Projects Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
@@ -185,17 +175,17 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h3 class="w3-center">CONTACT ME</h3>
+  <p class="w3-center"><em>I'd love to here from you!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="https://iomics.ugent.be/secrify/images/ugent-logo.png" class="w3-image w3-round" style="width:100%">
-    </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Ghent, Belgum<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: lowie.meganck@ugent.be<br>
+        <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i> Ghent, Belgum<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" onclick="window.location.href='mailto: lowie@meganck.me'"></i> <a style="text-decoration:none" href = "mailto: lowie@meganck.me">Send Email</a><br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" onclick="window.location.href='tel:0032499328490'"></i> <a a style="text-decoration:none" href = "tel: ++32499328490">Call me</a><br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right " onclick="window.location.href='https://www.linkedin.com/in/lowie-meganck-8a98b9254/'"></i> <a style="text-decoration:none" href="https://www.linkedin.com/in/lowie-meganck-8a98b9254/"> LinkedIn</a><br>
+        <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right" onclick="window.location.href='https://github.com/lowie314'"></i> <a style="text-decoration:none" href="https://github.com/lowie314"> Github</a>
       </div>
     </div>
   </div>
@@ -204,14 +194,6 @@ body, html {
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <!-- <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div> -->
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
@@ -220,14 +202,8 @@ body, html {
   <#me> a foaf:Person .
   <#me> foaf:name 'Lowie Meganck' .
   <#me> foaf:dateofbirth '2000' .
-  <https://pietercolpaert.be/#me> a foaf:Person .
-  <https://sven-lieber.org/#me> a foaf:Person .
   <https://micdwild.github.io/#me> a foaf:Person .
-  <https://julianlatest.github.io/#me> a foaf:Person .
-  <#me> foaf:knows <https://pietercolpaert.be/#me> .
-  <#me> foaf:knows <https://sven-lieber.org/#me> .
   <#me> foaf:knows <https://micdwild.github.io/#me> .
-  <#me> foaf:knows <https://julianlatest.github.io/#me> .
 </script>
   
  
